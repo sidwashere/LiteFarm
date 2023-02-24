@@ -191,6 +191,15 @@ const Unit = ({
     const isSelectDisabled = options.length <= 1;
     const measure = convert().describe(databaseUnit)?.measure;
     const reactSelectWidth = getReactSelectWidth(measure);
+    // getDefaultUnit returns "CORRECT" unit & value that follows unit system
+    console.log(
+      '================***================',
+      unitType,
+      value,
+      system,
+      databaseUnit,
+      getDefaultUnit(unitType, value, system, databaseUnit),
+    );
     return to && convert().describe(to)?.system === system
       ? {
           displayUnit: to,
@@ -211,12 +220,14 @@ const Unit = ({
         };
   }, []);
   const reactSelectStyles = useReactSelectStyles(disabled, { reactSelectWidth });
-
+  console.log('***** unit: ', hookFormGetValue(displayUnitName));
   const hookFormUnitOption = hookFromWatch(displayUnitName);
   const hookFormUnit = hookFormUnitOption?.value;
   useEffect(() => {
     if (typeof hookFormUnitOption === 'string' && getUnitOptionMap()[hookFormUnitOption]) {
+      // *** SET CORRECT UNIT, but does not take into unit system (metric/imperial)
       hookFormSetValue(displayUnitName, getUnitOptionMap()[hookFormUnitOption]);
+      console.log('INITIAL SET: ', hookFormUnitOption, getUnitOptionMap()[hookFormUnitOption]);
     }
   }, []);
   useEffect(() => {
@@ -225,23 +236,31 @@ const Unit = ({
     }
   }, [hookFormUnit]);
 
+  // !!!!!!!!!!!!!! This overrides correct unit, but set correct unit for metric/imperial...
   useEffect(() => {
     !hookFormGetValue(displayUnitName) &&
       hookFormSetValue(displayUnitName, getUnitOptionMap()[displayUnit]);
+    console.log('#########updating unit[1]...', getUnitOptionMap()[displayUnit]);
     if (hookFormGetValue(displayUnitName)) {
       hookFormSetValue(displayUnitName, getUnitOptionMap()[displayUnit]);
+      console.log('#########updating unit[2]...', getUnitOptionMap()[displayUnit]);
     }
   }, []);
 
   const [visibleInputValue, setVisibleInputValue] = useState(displayValue);
   const hookFormValue = hookFromWatch(name, defaultValue);
 
+  console.log(`displayUnitName: ${displayUnitName}`);
+  console.log(`to: ${to}`);
+  console.log(`hookFormUnit && hookFormValue: ${hookFormUnit}, ${hookFormValue}`);
+  console.log(`name, defaultValue: ${name}, ${defaultValue}`);
   useEffect(() => {
     hookFormSetHiddenValue(hookFormValue, { shouldValidate: true, shouldDirty: false });
   }, []);
 
   useEffect(() => {
     if (hookFormUnit && hookFormValue !== undefined) {
+      // $$$$$$$ convert stored as unit into preferred value
       setVisibleInputValue(
         roundToTwoDecimal(convert(hookFormValue).from(databaseUnit).to(hookFormUnit)),
       );

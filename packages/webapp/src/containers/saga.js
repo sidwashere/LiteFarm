@@ -344,7 +344,9 @@ export function* getLocationsSuccessSaga({ payload: locations }) {
     {},
   );
   for (const location of locations) {
-    locations_by_figure_type[location.figure.type].push(location);
+    if (locations_by_figure_type[location.figure.type]) {
+      locations_by_figure_type[location.figure.type].push(location);
+    }
   }
   for (const figure_type in figureTypeActionMap) {
     try {
