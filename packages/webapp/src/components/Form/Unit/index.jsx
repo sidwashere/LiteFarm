@@ -430,6 +430,7 @@ const Unit = ({
         {...register(name, {
           required: required && t('common:REQUIRED'),
           valueAsNumber: true,
+          // calculate actual max, but use "max" for message?
           max: { value: getMax(), message: t('UNIT.VALID_VALUE') + max },
           min: { value: 0, message: t('UNIT.VALID_VALUE') + max },
         })}
