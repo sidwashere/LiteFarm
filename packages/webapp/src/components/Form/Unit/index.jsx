@@ -265,6 +265,8 @@ const Unit = ({
         roundToTwoDecimal(convert(hookFormValue).from(databaseUnit).to(hookFormUnit)),
       );
       //Trigger validation
+      // auto conversion is handled here
+      console.log('##### VALIDATION ########');
       (hookFormValue === 0 || hookFormValue > 0) && hookFormSetHiddenValue(hookFormValue);
     }
   }, [hookFormUnit]);
