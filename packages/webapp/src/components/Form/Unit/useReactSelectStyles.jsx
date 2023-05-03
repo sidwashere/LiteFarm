@@ -13,9 +13,10 @@
  *  GNU General Public License for more details, see <https://www.gnu.org/licenses/>.
  */
 import { useMemo } from 'react';
+import { REACT_SELECT_WIDTH } from '.';
 import { styles as reactSelectDefaultStyles } from '../ReactSelect';
 
-const useReactSelectStyles = (disabled, { reactSelectWidth } = {}) => {
+const useReactSelectStyles = (disabled) => {
   return useMemo(
     () => ({
       ...reactSelectDefaultStyles,
@@ -37,10 +38,10 @@ const useReactSelectStyles = (disabled, { reactSelectWidth } = {}) => {
       }),
       valueContainer: (provided, state) => ({
         ...provided,
-        padding: '0',
-        width: `${reactSelectWidth - 19}px`,
+        padding: '0 12px 0 0',
+        width: `${REACT_SELECT_WIDTH - 19}px`,
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'end',
         background: disabled ? 'var(--inputDisabled)' : 'inherit',
       }),
       singleValue: (provided, state) => ({
@@ -61,8 +62,13 @@ const useReactSelectStyles = (disabled, { reactSelectWidth } = {}) => {
         padding: ' 14px 0 12px 0',
         transform: 'translateX(-4px)',
       }),
+      option: (provided, state) => ({
+        ...reactSelectDefaultStyles.option(provided, state),
+        paddingRight: '32px',
+        textAlign: 'right',
+      }),
     }),
-    [disabled, reactSelectWidth],
+    [disabled],
   );
 };
 

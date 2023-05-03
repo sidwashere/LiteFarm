@@ -30,6 +30,8 @@ import useUnit from './useUnit';
 import useReactSelectStyles from './useReactSelectStyles';
 import useElementWidth from '../../hooks/useElementWidth';
 
+export const REACT_SELECT_WIDTH = 120;
+
 const Unit = ({
   disabled = false,
   classes = { container: {} },
@@ -75,7 +77,6 @@ const Unit = ({
     error,
     onKeyDown,
     onChangeUnit,
-    reactSelectWidth,
     dividerWidth,
   } = useUnit({
     disabled,
@@ -99,7 +100,7 @@ const Unit = ({
     autoConversion,
   });
 
-  const reactSelectStyles = useReactSelectStyles(disabled, { reactSelectWidth });
+  const reactSelectStyles = useReactSelectStyles(disabled);
   const testId = props['data-testid'] || 'unit';
   const currencyRef = useRef(null);
   const { elementWidth } = useElementWidth(currencyRef);

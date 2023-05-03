@@ -24,8 +24,8 @@ import {
 } from '../../../util/convert-units/unit';
 import { convert } from '../../../util/convert-units/convert';
 import { getUnitOptionMap } from '../../../util/convert-units/getUnitOptionMap';
+import { REACT_SELECT_WIDTH } from '.';
 
-const DEFAULT_REACT_SELECT_WIDTH = 80;
 const DEFAULT_SELECT_ARROW_ICON_WIDTH = 20;
 
 const getOptions = (unitType = area_total_area, system) => {
@@ -34,10 +34,6 @@ const getOptions = (unitType = area_total_area, system) => {
 
 const getOnKeyDown = (measure) => {
   return measure === 'time' ? integerOnKeyDown : numberOnKeyDown;
-};
-
-const getReactSelectWidth = (measure) => {
-  return measure === 'time' ? 93 : DEFAULT_REACT_SELECT_WIDTH;
 };
 
 const noValue = (value) => (value !== 0 && !value) || isNaN(value);
@@ -63,7 +59,6 @@ const noValue = (value) => (value !== 0 && !value) || isNaN(value);
  * @property {function} inputOnBlur - function called on blur
  * @property {object} error - error returned by "get(errors, name)" (react-hook-form)
  * @property {function} onChangeUnit - function called when unit option is changed
- * @property {number} reactSelectWidth - width of the reactSelect
  * @property {number} dividerWidth - width of the vertical divider
  * @property {function} onKeyDown - function called on key down
  *
@@ -116,7 +111,6 @@ const useUnit = ({
     options,
     databaseUnit,
     defaultIsSelectDisabled,
-    reactSelectWidth,
     dividerWidth,
     onKeyDown,
   } = useMemo(() => {
@@ -129,17 +123,15 @@ const useUnit = ({
     hookFormDisplayUnit = hookFormDisplayUnit?.value || hookFormDisplayUnit;
     const defaultIsSelectDisabled = options.length <= 1;
     const measure = convert().describe(databaseUnit)?.measure;
-    const reactSelectWidth = getReactSelectWidth(measure);
     const onKeyDown = getOnKeyDown(measure);
     const dividerWidth = defaultIsSelectDisabled
-      ? reactSelectWidth - DEFAULT_SELECT_ARROW_ICON_WIDTH
-      : reactSelectWidth;
+      ? REACT_SELECT_WIDTH - DEFAULT_SELECT_ARROW_ICON_WIDTH
+      : REACT_SELECT_WIDTH;
     const displayUnit = to || hookFormDisplayUnit;
     const values = {
       options,
       databaseUnit,
       defaultIsSelectDisabled,
-      reactSelectWidth,
       dividerWidth,
       onKeyDown,
     };
@@ -290,7 +282,6 @@ const useUnit = ({
     inputOnBlur,
     error,
     onChangeUnit,
-    reactSelectWidth,
     dividerWidth,
     onKeyDown,
   };
