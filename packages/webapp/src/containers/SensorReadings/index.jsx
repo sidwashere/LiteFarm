@@ -10,7 +10,7 @@ import { sensorsSelector } from '../sensorSlice';
 import utils from '../WeatherBoard/utils';
 import { measurementSelector } from '../../containers/userFarmSlice';
 import styles from './styles.module.scss';
-import { Semibold, Label } from '../../components/Typography';
+import { Semibold } from '../../components/Typography';
 import { sensorReadingTypesByLocationSelector } from '../../containers/sensorReadingTypesSlice';
 
 function SensorReadings({ history, match }) {
@@ -66,21 +66,21 @@ function SensorReadings({ history, match }) {
 
   const forecastInfo = useMemo(() => {
     return (
-      <>
-        <Label className={styles.subTitle}>{t('SENSOR.SENSOR_FORECAST.TITLE')}</Label>
-        <Label className={styles.subTitle}>
+      <div className={styles.forecastInfo}>
+        <div className={styles.forecastInfoTitle}>{t('SENSOR.SENSOR_FORECAST.TITLE')}</div>
+        <div>
           {t('SENSOR.SENSOR_FORECAST.HIGH_AND_LOW_TEMPERATURE', {
             high: latestMaxTemperature,
             low: latestMinTemperature,
             tempUnit: tempUnit ?? 'C',
           })}
-        </Label>
-        <Label className={styles.subTitle}>
+        </div>
+        <div>
           {t('SENSOR.SENSOR_FORECAST.WEATHER_STATION', {
             weatherStationLocation: nearestStationName,
           })}
-        </Label>
-      </>
+        </div>
+      </div>
     );
   }, [styles, latestMaxTemperature, latestMinTemperature, tempUnit, nearestStationName]);
 
