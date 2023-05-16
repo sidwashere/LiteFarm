@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import SensorReadingsLineChart from '../SensorReadingsLineChart';
@@ -10,7 +10,7 @@ import { sensorsSelector } from '../sensorSlice';
 import utils from '../WeatherBoard/utils';
 import { measurementSelector } from '../../containers/userFarmSlice';
 import styles from './styles.module.scss';
-import { Semibold } from '../../components/Typography';
+import { Semibold, Label } from '../../components/Typography';
 import { sensorReadingTypesByLocationSelector } from '../../containers/sensorReadingTypesSlice';
 
 function SensorReadings({ history, match }) {
@@ -41,15 +41,6 @@ function SensorReadings({ history, match }) {
       setSensorVisualizationPropList({
         [TEMPERATURE]: {
           title: t('SENSOR.TEMPERATURE_READINGS_OF_SENSOR.TITLE'),
-          subTitle: t('SENSOR.TEMPERATURE_READINGS_OF_SENSOR.SUBTITLE', {
-            high: latestMaxTemperature,
-            low: latestMinTemperature,
-            tempUnit: tempUnit ?? 'C',
-          }),
-          weatherStationName: t('SENSOR.TEMPERATURE_READINGS_OF_SENSOR.WEATHER_STATION', {
-            weatherStationLocation: nearestStationName,
-          }),
-
           xAxisDataKey: CURRENT_DATE_TIME,
           yAxisLabel: t('SENSOR.TEMPERATURE_READINGS_OF_SENSOR.Y_AXIS_LABEL', {
             tempUnit: tempUnit ?? 'C',
@@ -61,11 +52,6 @@ function SensorReadings({ history, match }) {
         },
         [SOIL_WATER_POTENTIAL]: {
           title: t('SENSOR.SOIL_WATER_POTENTIAL_READINGS_OF_SENSOR.TITLE'),
-          subTitle: t('SENSOR.SOIL_WATER_POTENTIAL_READINGS_OF_SENSOR.SUBTITLE', {
-            high: latestMaxTemperature,
-            low: latestMinTemperature,
-            soilWaterPotentialUnit: soilWaterPotentialUnit ?? 'kPa',
-          }),
           xAxisDataKey: CURRENT_DATE_TIME,
           yAxisLabel: t('SENSOR.SOIL_WATER_POTENTIAL_READINGS_OF_SENSOR.Y_AXIS_LABEL', {
             soilWaterPotentialUnit: soilWaterPotentialUnit ?? 'kPa',
@@ -77,6 +63,26 @@ function SensorReadings({ history, match }) {
       });
     }
   }, [sensorInfo, reading_types, history, latestMaxTemperature, latestMinTemperature]);
+
+  const forecastInfo = useMemo(() => {
+    return (
+      <>
+        <Label className={styles.subTitle}>{t('SENSOR.SENSOR_FORECAST.TITLE')}</Label>
+        <Label className={styles.subTitle}>
+          {t('SENSOR.SENSOR_FORECAST.HIGH_AND_LOW_TEMPERATURE', {
+            high: latestMaxTemperature,
+            low: latestMinTemperature,
+            tempUnit: tempUnit ?? 'C',
+          })}
+        </Label>
+        <Label className={styles.subTitle}>
+          {t('SENSOR.SENSOR_FORECAST.WEATHER_STATION', {
+            weatherStationLocation: nearestStationName,
+          })}
+        </Label>
+      </>
+    );
+  }, [styles, latestMaxTemperature, latestMinTemperature, tempUnit, nearestStationName]);
 
   return (
     <>
@@ -105,6 +111,7 @@ function SensorReadings({ history, match }) {
               },
             ]}
           />
+          {forecastInfo}
           {readingTypes?.length > 0
             ? [...readingTypes]
                 ?.sort()

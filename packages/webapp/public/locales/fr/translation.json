@@ -1789,11 +1789,14 @@
       "RETIRE_SUCCESS": "Retrait du capteur réussi",
       "RETIRE_FAILURE": "Il y a eu une erreur lors du retrait de ce capteur"
     },
+    "SENSOR_FORECAST": {
+      "TITLE": "MISSING",
+      "HIGH_AND_LOW_TEMPERATURE": "MISSING: {{high}}{{tempUnit}} / {{low}}{{tempUnit}}",
+      "WEATHER_STATION": "Station météorologique\u00a0: {{weatherStationLocation}}"
+    },
     "TEMPERATURE_READINGS_OF_SENSOR": {
       "TITLE": "Température du sol",
-      "SUBTITLE": "Température MISSING ambiante haute et basse d'aujourd'hui\u00a0: {{high}}{{tempUnit}} / {{low}}{{tempUnit}}",
       "Y_AXIS_LABEL": "Température en {{tempUnit}}",
-      "WEATHER_STATION": "Station météorologique\u00a0: {{weatherStationLocation}}",
       "NO_DATA": "(aucune donnée)",
       "AMBIENT_TEMPERATURE_FOR": "Température ambiante pour",
       "LAST_UPDATED_TEMPERATURE_READINGS": "Dernière mise à jour à {{latestReadingUpdate}}"

@@ -1789,11 +1789,14 @@
       "RETIRE_SUCCESS": "Sensor retirado com sucesso",
       "RETIRE_FAILURE": "Ocorreu um erro ao desativar este sensor"
     },
+    "SENSOR_FORECAST": {
+      "TITLE": "MISSING",
+      "HIGH_AND_LOW_TEMPERATURE": "MISSING: {{high}}{{tempUnit}} / {{low}}{{tempUnit}}",
+      "WEATHER_STATION": "Estação meteorológica: {{weatherStationLocation}}"
+    },
     "TEMPERATURE_READINGS_OF_SENSOR": {
       "TITLE": "Temperatura do solo",
-      "SUBTITLE": "Temperatura MISSING ambiente máxima e mínima de hoje: {{high}}{{tempUnit}} / {{low}}{{tempUnit}}",
       "Y_AXIS_LABEL": "Temperatura em {{tempUnit}}",
-      "WEATHER_STATION": "Estação meteorológica: {{weatherStationLocation}}",
       "NO_DATA": "(sem dados))",
       "AMBIENT_TEMPERATURE_FOR": "Temperatura ambiente para",
       "LAST_UPDATED_TEMPERATURE_READINGS": "Última atualização {{latestReadingUpdate}}"
