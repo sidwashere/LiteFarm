@@ -12,6 +12,7 @@ import { measurementSelector } from '../../containers/userFarmSlice';
 import styles from './styles.module.scss';
 import { Semibold } from '../../components/Typography';
 import { sensorReadingTypesByLocationSelector } from '../../containers/sensorReadingTypesSlice';
+import { ReactComponent as Themometer } from '../../assets/images/themometer.svg';
 
 function SensorReadings({ history, match }) {
   const { t } = useTranslation();
@@ -67,7 +68,10 @@ function SensorReadings({ history, match }) {
   const forecastInfo = useMemo(() => {
     return (
       <div className={styles.forecastInfo}>
-        <div className={styles.forecastInfoTitle}>{t('SENSOR.SENSOR_FORECAST.TITLE')}</div>
+        <div className={styles.forecastInfoTitle}>
+          <Themometer className={styles.themometerIcon} />
+          {t('SENSOR.SENSOR_FORECAST.TITLE')}
+        </div>
         <div>
           {t('SENSOR.SENSOR_FORECAST.HIGH_AND_LOW_TEMPERATURE', {
             high: latestMaxTemperature,
