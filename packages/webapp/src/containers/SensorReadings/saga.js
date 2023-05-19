@@ -129,9 +129,15 @@ export function* getSensorsReadingsSaga({ payload }) {
           openWeatherPromiseList.push(call(axios.get, openWeatherUrl?.toString()));
         }
 
-        const [openWeatherResponse, predictedWeatherResponse, predictedDailyWeatherResponse] =
-          yield all(openWeatherPromiseList);
-        stationName = predictedDailyWeatherResponse?.data?.city.name;
+        const [
+          openWeatherResponse,
+          predictedWeatherResponse,
+          predictedDailyWeatherResponse,
+          geocodingResponse,
+        ] = yield all(openWeatherPromiseList);
+
+        stationName = geocodingResponse?.data?.[0].name;
+
         const weatherResData = [
           ...openWeatherResponse.data.list,
           ...predictedWeatherResponse.data.list,
