@@ -22,6 +22,28 @@ import clsx from 'clsx';
 import { SnackbarProvider } from 'notistack';
 import { NotistackSnackbar } from './containers/Snackbar/NotistackSnackbar';
 import { OfflineDetector } from './containers/hooks/useOfflineDetector/OfflineDetector';
+import { RRule } from 'rrule';
+import { getRruleLanguage } from './util/rruleTranslation';
+
+const rule = new RRule({
+  freq: 1,
+  dtstart: new Date(),
+  bymonthday: [5],
+  // byweekday: [RRule.FR.nth(-1)],
+  interval: 4,
+});
+
+const en = await getRruleLanguage('en');
+const fr = await getRruleLanguage('fr');
+const pt = await getRruleLanguage('pt');
+
+// en: every 4 months on the 5th
+// fr: jedes 4 Monate auf dem 5th
+// pt: cada 4 Monate am 5.,
+console.log(` en: ${rule.toText(en.getText, en.language)}
+ fr: ${rule.toText(fr.getText, fr.language)}
+ pt: ${rule.toText(pt.getText, pt.language)}
+`);
 
 const useStyles = makeStyles((theme) => ({
   container: {
