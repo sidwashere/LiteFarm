@@ -1,0 +1,50 @@
+// https://github.com/jakubroztocil/rrule/issues/13#issuecomment-1031342733
+
+const frStrings = {
+  every: 'jedes',
+  until: 'bis',
+  day: 'Tag',
+  days: 'Tage',
+  week: 'Woche',
+  weeks: 'Wochen',
+  on: 'ein',
+  in: 'in',
+  'on the': 'auf dem',
+  for: 'für',
+  and: 'und',
+  or: 'oder',
+  at: 'bei',
+  last: 'zuletzt',
+  '(~ approximate)': '(~ approximativ)',
+  times: 'Zeiten',
+  time: 'Zeit',
+  minutes: 'Minuten',
+  hours: 'Stunden',
+  weekdays: 'Wochentage',
+  weekday: 'Wochentag',
+  months: 'Monate',
+  month: 'Monat',
+  years: 'Jahre',
+  year: 'Jahr',
+};
+
+export default {
+  getText: (id) => frStrings[id] || id,
+  language: {
+    dayNames: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+    monthNames: [
+      'Januar',
+      'Februar',
+      'März',
+      'April',
+      'Mai',
+      'Juni',
+      'Juli',
+      'August',
+      'September',
+      'Oktober',
+      'November',
+      'Dezember',
+    ],
+  },
+};
