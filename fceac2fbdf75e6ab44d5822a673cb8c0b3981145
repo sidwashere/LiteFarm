@@ -1,0 +1,703 @@
+[33mcommit 8b51617f748d3d25577d15515bd8054099de2aba[m[33m ([m[1;36mHEAD -> [m[1;32mintegration[m[33m)[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 09:30:54 2023 +0300
+
+    new commit for env file on api folder
+
+[33mcommit b941138eb8f5964beef136fc94a3eeede5505daf[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 09:24:30 2023 +0300
+
+    new push minues the large zip file
+
+[33mcommit 50906eb0a25a9061ae70d514e5362a7b8feb6ed8[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 09:16:21 2023 +0300
+
+    new updates for env
+
+[33mcommit fee494efff4c057ea879774b9f7233d786719cd5[m
+Merge: 02deab96f 826249b85
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 09:14:54 2023 +0300
+
+    Merge branch 'integration' of https://github.com/sidwashere/LiteFarm into integration
+
+[33mcommit 826249b85e0991c840d26877363b59d2064ee4a8[m[33m ([m[1;31morigin/integration[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 64db73bbe 78f4cbca9
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 09:06:10 2023 +0300
+
+    Merge branch 'LiteFarmOrg:integration' into integration
+
+[33mcommit 02deab96f09be5203e9572179775be1cea668d07[m
+Merge: 60f47009b 64db73bbe
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 08:48:16 2023 +0300
+
+    Merge branch 'integration' of https://github.com/sidwashere/LiteFarm into integration
+
+[33mcommit 60f47009b985bae7ce3dca127515b449382dc52e[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 08:47:34 2023 +0300
+
+    push dependancies
+
+[33mcommit 64db73bbe74f0ed4c88f1635189057e811ea28e3[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Mon Jul 31 07:42:13 2023 +0300
+
+    Update .gitignore
+    
+    released .env files to the repository for easy access to gcloud
+
+[33mcommit 78f4cbca9e67e84fe1a986a7caf783361dece0bd[m
+Merge: d7a58c05c 6a08b1b24
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Sun Jul 30 05:10:49 2023 +0000
+
+    Merge pull request #2782 from LiteFarmOrg/LF-3465-delete-a-crop-plan-core-functionality
+    
+    LF-3465 Delete a crop plan | Core functionality
+
+[33mcommit d7a58c05c61d1c7006f03170ead40b87b7293681[m
+Merge: 9a55f3b43 45247aee4
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Sun Jul 30 04:02:38 2023 +0000
+
+    Merge pull request #2794 from LiteFarmOrg/LF-3464/Update_UXUI_per_discussion
+    
+    LF-3464: Repeat crop plan | Update UI/UI per discussion
+
+[33mcommit 66a17d850b5e853c19f84858817f917da82d3140[m
+Merge: 5bbb9e768 9a55f3b43
+Author: sidwashere <sid.geek.sid@gmail.com>
+Date:   Sat Jul 29 23:14:51 2023 +0300
+
+    Merge branch 'integration' of https://github.com/sidwashere/LiteFarm into integration
+
+[33mcommit 5bbb9e7682280a81d099ad2f87af0dd1562854fa[m
+Author: Aurah <sid.geek.sid@gmail.com>
+Date:   Sat Jul 29 23:08:02 2023 +0300
+
+    pushing latest changes
+
+[33mcommit 6a08b1b24036260ede3b6d49f3dcdbc307ccc88b[m
+Merge: 79fcbcd7a 9a55f3b43
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Sat Jul 29 11:16:59 2023 -0700
+
+    LF-3465 Merge integration and fix conflict
+
+[33mcommit 9a55f3b438438fbdc74fcbd68f4d39da6071f716[m
+Merge: 682cdeef9 ab5a58575
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Sat Jul 29 11:11:36 2023 -0700
+
+    Merge pull request #2796 from LiteFarmOrg/LF-3478/The_user_is_not_able_to_complete_the_repeation_crop_plan_flow
+    
+    LF-3478: The user is not able to complete the repeat crop plan flow
+
+[33mcommit 45247aee435cbfc7357a44aac76a838e615d0cd8[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Sat Jul 29 00:26:46 2023 -0700
+
+    LF-3464 get back functionality to keep selected monthly option pattern for RepeatCropPlan
+
+[33mcommit ab5a58575e9a5f831f355c6090667b1346117b2b[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 28 23:15:45 2023 -0700
+
+    LF-3478 add persistedPaths as useHookFormPersist's argument in RepeatCropPlan
+
+[33mcommit 6b04a122c99d23b87976d9b395f13d08401b9f10[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 28 15:26:19 2023 -0700
+
+    LF-3464 handle timezone issue in getTextAndOccurrences
+
+[33mcommit 79fcbcd7ac35695a872ea3d5cd4cb1e2189145a3[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Fri Jul 28 15:25:43 2023 -0700
+
+    LF-3465 Add back in (only) store updates on new plan
+    
+    I had previously also adjusted the repeat form onCancel, but that broke persisted form data
+
+[33mcommit be6a4048d7fbe4a794d388b6cafab3c30ea415ab[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Fri Jul 28 14:57:24 2023 -0700
+
+    Revert "LF-3465 Handle refresh of store on create new plan with repeat"
+    
+    This reverts commit 26b99984bc1b74b00103da7d49170acfc0bc1b4e.
+
+[33mcommit 26b99984bc1b74b00103da7d49170acfc0bc1b4e[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Fri Jul 28 14:48:39 2023 -0700
+
+    LF-3465 Handle refresh of store on create new plan with repeat
+
+[33mcommit f45fc4bad98a362c7f2187a21fa1cf3fc75f6bf3[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Fri Jul 28 13:50:29 2023 -0700
+
+    LF-3465 Refresh store after repeating crop plan
+
+[33mcommit 682cdeef9d27425c057a7f5d88b98ef8aa5f3c3d[m
+Merge: d11154dd0 0d76d845d
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Fri Jul 28 19:42:52 2023 +0000
+
+    Merge pull request #2795 from LiteFarmOrg/LF-3363-2-Repeat-crop-plan-endpoint
+    
+    LF-3363 - Does not include deleted tasks, move util to test util, che…
+
+[33mcommit ab3f33463fb67646476fce2de092ebb3a164c2f3[m
+Merge: 24f4fe22d d11154dd0
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Fri Jul 28 11:37:22 2023 -0700
+
+    LF-3465 Merge integration and fix conflict
+
+[33mcommit 0d76d845dca032bb5f8a886305a18a14f42272ca[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Fri Jul 28 14:37:11 2023 -0400
+
+    LF-3363 - Does not include deleted tasks, move util to test util, check if management_plan is deleted
+
+[33mcommit 9200d111471ff85f1e752470ee8d8aa568e65167[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 28 00:24:04 2023 -0700
+
+    LF-3464 update REPEAT_PLAN.EARLIEST_TASK translation
+
+[33mcommit 7b1b9b11aefd53cfbfaae96c919d77192d3b2f53[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 28 00:13:20 2023 -0700
+
+    LF-3464 add translations and date type for repeat plan source task date info
+
+[33mcommit a763bb1047956efe0e80bff4343dac38ebd26f69[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 23:34:58 2023 -0700
+
+    LF-3464 set overflow-y: auto in CropPlansModal
+
+[33mcommit b26edad762948cfcb3fe3b180f4a9d79b03f459d[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 22:56:15 2023 -0700
+
+    LF-3464 update getAndSetMonthlyOptions function to keep selected option when coming back
+
+[33mcommit 278a30e53a3fa65b755eb0d83efaab9a3065835f[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 17:23:56 2023 -0700
+
+    LF-3464 Add source task date information subtext
+
+[33mcommit 0a5bbf5c9fb5601d1c415ff511e63fe59607c39c[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 15:50:13 2023 -0700
+
+    LF-3464 update calculateMonthlyOptions to handle the 4th and the last week
+
+[33mcommit 0924f60fa2c7ea20b3a3fd3f29b866023114dbd9[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 15:18:16 2023 -0700
+
+    LF-3464 update getOccurrencesRuleOptions not to duplicate existing plan
+
+[33mcommit d11154dd087a86d998b4d021b8c3e9a36e0ce708[m
+Merge: 02f632ebd 456bb3ebe
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Fri Jul 28 06:32:12 2023 +0000
+
+    Merge pull request #2781 from LiteFarmOrg/LF-3378/Repeat_crop_plan-Confirmation_of_repeated_series
+    
+    LF-3378: Repeat crop plan | Confirmation of repeated series
+
+[33mcommit 02f632ebd8f83f22a71490e8b280103ce7e85113[m
+Merge: 8fd80cea5 4a5c1a9dd
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Fri Jul 28 06:29:41 2023 +0000
+
+    Merge pull request #2787 from LiteFarmOrg/LF-3371_2/Repeat_crop_plan-Show_repeated_plan_disambiguation_modal
+    
+    LF-3371 (2) Repeat crop plan | Show repeated plan disambiguation modal
+
+[33mcommit 8fd80cea552a9e7c746ea873ecd9ccebd27350d9[m
+Merge: b5dfb45a7 8885bf99f
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Fri Jul 28 06:28:19 2023 +0000
+
+    Merge pull request #2793 from LiteFarmOrg/LF-3368-copy-crop-plan-add-menu-fixes
+    
+    LF-3368 Copy Crop menu | Fix role permissions and clickable close area
+
+[33mcommit 24f4fe22dfff8e56a214198295ea0ef08affb54d[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 17:10:40 2023 -0700
+
+    LF-3465 Pass trx into all queries
+
+[33mcommit 69739ec5673ba60f85a65bea2aa000cf8fefb4e0[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 16:57:40 2023 -0700
+
+    LF-3465 Fix console warnings on splash screen redirect
+
+[33mcommit 9d0cc207b0f1daf515f2ead3cf4c11b12709c325[m
+Merge: 9072bf856 b5dfb45a7
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 16:02:17 2023 -0700
+
+    Merge branch 'integration' into LF-3465-delete-a-crop-plan-core-functionality
+
+[33mcommit 8885bf99f3630851cd322003d7d9247f6e5df38c[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 14:25:57 2023 -0700
+
+    LF-3368 Use ClickAwayListener for menu close
+
+[33mcommit 456bb3ebedf57cf5c928c531b22d859831f826da[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 13:03:42 2023 -0700
+
+    LF-3378 tweak getTextAndOccurrences
+
+[33mcommit 916ecfafea55aef03339dcf16be88d27acea6c06[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 12:51:40 2023 -0700
+
+    LF-3378 fix getTextAndOccurrences to use preferred language
+
+[33mcommit f71e54e50d5859885b5b09f4a9cbfb48a9a9d399[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 12:28:10 2023 -0700
+
+    LF-3378 create a util file for getDate function
+
+[33mcommit b5dfb45a7888db5ec929abe845a86ba42818e199[m
+Merge: c66f03148 66d6f1a3a
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Thu Jul 27 19:24:31 2023 +0000
+
+    Merge pull request #2775 from LiteFarmOrg/LF-3363-repeat-crop-plan-repeat-crop-plan-endpoint
+    
+    Lf 3363 repeat crop plan repeat crop plan endpoint
+
+[33mcommit 4a5c1a9ddcbdfddd3aa7ccc6f2af6eaf88081a92[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 27 12:05:05 2023 -0700
+
+    LF-3371 adjust crop plan name width
+
+[33mcommit 0f7f39d172f6170fc3e45d9456f4bc66628e85f0[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 08:29:30 2023 -0700
+
+    LF-3368 Add menu translations
+
+[33mcommit f1f21c9f4274a02a46dddd961d6f250894d19a5e[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 07:19:15 2023 -0700
+
+    LF-3368 Fix role permissions and clickable close area for menu
+
+[33mcommit 9072bf85694fab643744fcfb0b4a083cdedc9a0a[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Thu Jul 27 06:50:57 2023 -0700
+
+    LF-3465 Fix task filtering logic
+
+[33mcommit 79ebd6ca42bf612094508adb23a60a52053ad5e7[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 23:09:12 2023 -0700
+
+    LF-3465 Further cleanup
+
+[33mcommit 290488496e2ab726588587009119ef8cfe3b0cd2[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 23:05:59 2023 -0700
+
+    LF-3465 Remove new reducer as it is no longer used
+
+[33mcommit 9a4bb2d766ad298b1736bf8873668ae23ed23e49[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 22:58:41 2023 -0700
+
+    LF-3465 Fix problematic Redux store function and clean up saga
+
+[33mcommit 1834272ba4fa597c8b59c62d779b3d4c09c5fe52[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 22:49:20 2023 -0700
+
+    LF-3465 Fix frontend concurrency by using set instead of upsert
+
+[33mcommit 023ea220f4ec4840a1357eea21be3e3269822dd0[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 22:46:35 2023 -0700
+
+    LF-3465 Add checks for deleted plans to API
+
+[33mcommit bbc31f2c95b36f9c9850087fd94919743634df30[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Wed Jul 26 16:18:19 2023 -0700
+
+    LF-3371 add ManagementWithRepeatPlanCards story
+
+[33mcommit 2bbefc4ff9d571349ac74e1030d05fd46b803070[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Wed Jul 26 16:05:12 2023 -0700
+
+    LF-3371 open CropPlansModal on clicking repeat info
+
+[33mcommit 469cc789fe02fb11d5470f7d8d91d826d2849d3b[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Wed Jul 26 15:39:49 2023 -0700
+
+    LF-3378 update request body of repeat plan API call
+
+[33mcommit 4463f49f2145ae82e6d0ac6d262d8fdfd1004dfb[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Wed Jul 26 09:32:49 2023 -0700
+
+    LF-3378 adjust proptypes of RepeatCropPlan form
+
+[33mcommit 0e471cfa76b41f503ed4f488239b423ed3cacf30[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Tue Jul 25 16:14:39 2023 -0700
+
+    LF-3378 use persistedFormData in RepeatCropPlan when coming back from confirmation view
+
+[33mcommit eeb4f94dcf32e481abdbca4831a3821443e30413[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Tue Jul 25 16:12:51 2023 -0700
+
+    LF-3378 remove unnecessary null check in RepeatCropPlan Confirmation
+
+[33mcommit 7352b9063f43b4e9024c7dd12888035f5855f9de[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Tue Jul 25 15:57:20 2023 -0700
+
+    LF-3378 complete postRepeatCropPlanSaga, adjust payload in RepeatCropPlan Confirmation
+
+[33mcommit 070317153aac5cdbdae2f1242896c1671cea6024[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 12:59:48 2023 -0700
+
+    LF-3378 create RepeatCropPlan Confirmation container
+
+[33mcommit 97b45fdda056b0b8b2cb3c73f87fd9233de10874[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 12:54:08 2023 -0700
+
+    LF-3378 create stories for RepeatCropPlan confirmation component
+
+[33mcommit 306a141bbf6655fc1f852ae8c7ee476ceb7154ae[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 12:53:34 2023 -0700
+
+    LF-3378 create RepeatCropPlan Confirmation component
+
+[33mcommit 6f05d52a771bb733edd8e9e3cb8b29b8e08d5e65[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 09:54:50 2023 -0700
+
+    LF-3378 remove duplicated translations
+
+[33mcommit a837de3913acb3b7e3b0ecdca2daa9366c08ad14[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 21 23:16:43 2023 -0700
+
+    LF-3378 break RepeatCropPlan util functions into smaller functions
+
+[33mcommit a97d86d211c138b0d772e0622edae302374607b6[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 21 12:24:11 2023 -0700
+
+    LF-3378 update french translation for RRule
+
+[33mcommit 3de5a66b9a0b164ec52a74808ad3fdcbc74015c9[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 21 09:01:11 2023 -0700
+
+    LF-3378 add translations for repeat plan confirmation
+
+[33mcommit c66f031487c8659a091667d35c1bb689e93ea1d3[m
+Merge: 48f6fdef7 ee1c4da2d
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 15:55:10 2023 -0700
+
+    Merge pull request #2786 from LiteFarmOrg/LF-3370-Repeat-crop-plan-Update-crop-plan-card-to-denote-a-repeated-plan
+    
+    Lf 3370 repeat crop plan update crop plan card to denote a repeated plan
+
+[33mcommit 66d6f1a3a48e708e83f135bf25a904552bb420ea[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 18:52:42 2023 -0400
+
+    Add license to new files
+
+[33mcommit 40e2f75cbfe73d180de415a71dd92be2dad2d990[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 18:47:21 2023 -0400
+
+    LF-3363 - imporove tests and syntax according to review
+
+[33mcommit 05e9ee01ac2d91ce24c66d6a4289133e4d0a57d2[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 17:45:52 2023 -0400
+
+    LF-3363 - renames vars to snake_case, replaces todo's undo's with jira bookmarks or removed as reasonable,
+
+[33mcommit 48f6fdef7c2bcf382955eae2a80920d0e10c1de0[m
+Merge: fceac2fbd a4950d770
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 16:47:17 2023 -0400
+
+    Merge pull request #2756 from LiteFarmOrg/LF-3371/Repeat_crop_plan-Show_repeated_plan_disambiguation_modal
+    
+    LF-3371 (1): Repeat crop plan show repeated plan disambiguation modal
+
+[33mcommit ee1c4da2d048f3f4b9b76f7d66ec4e943c055350[m
+Author: Gursimran Singh <gursimran83@gmail.com>
+Date:   Wed Jul 26 14:25:16 2023 -0600
+
+    update PureCropManagement component to pass repetition info and handle click event
+
+[33mcommit 097fabd744862ceee0620360e46ce58836ad1c10[m
+Author: Gursimran Singh <gursimran83@gmail.com>
+Date:   Wed Jul 26 14:15:30 2023 -0600
+
+    css changes
+
+[33mcommit 5200f6857e34430cfb637be3ff842b5a05d8153b[m
+Author: Gursimran Singh <gursimran83@gmail.com>
+Date:   Wed Jul 26 14:12:48 2023 -0600
+
+    update filteredManagementPlanCardContents to pass repeat plan info and hendle click event
+
+[33mcommit cd3823c1fb3426cdf4e699cdd6e8f4595156afe8[m
+Merge: eb77d2283 fceac2fbd
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 13:09:15 2023 -0700
+
+    LF-3465 Merge integration and fix conflicts
+
+[33mcommit fceac2fbdf75e6ab44d5822a673cb8c0b3981145[m
+Merge: c4a66bea3 b526dc299
+Author: Iván Perdomo <ivan@perdomo.me>
+Date:   Wed Jul 26 19:58:10 2023 +0000
+
+    Merge pull request #2785 from LiteFarmOrg/LF-3368-copy-crop-plan-add-menu
+    
+    LF-3368 Copy crop plan | Add menu
+
+[33mcommit b526dc299c7298313ff8c1980c284d945991a74d[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Wed Jul 26 12:18:24 2023 -0700
+
+    LF-3368 Remove mistaken gap property
+
+[33mcommit b765bf32c39d7b3d649dd7a3a64147d3a0c440d1[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 14:31:07 2023 -0400
+
+    LF-3363 - fix planName in repeat plan test
+
+[33mcommit cb04658405e7247c2f150fcc0cb061bf45289a23[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 14:26:32 2023 -0400
+
+    LF-3363 - Added final jsdoc for new function in util
+
+[33mcommit 0b4e7a9d260bcd116d68177eccf7c1a00b6ba308[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 14:15:07 2023 -0400
+
+    LF-3363 - fix templateMappingSchema for two models
+
+[33mcommit 78ef1081b2e190383b2c9aa5a0368c9ad3901102[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 14:10:35 2023 -0400
+
+    LF-3363 - Add check for bad request data, rename planName to crop_plan_name, no updates allowed mistake.
+    
+    Accidentally made an allowlist for updates to all tables except locationTasks - no bad behaviour observed but nonetheless it needed to be fixed.
+
+[33mcommit 8b8f1237e0281ac9546a0e1fa1c00c05d4c45fcf[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Wed Jul 26 13:45:42 2023 -0400
+
+    LF-3363 - Adds jest tests and helper functions
+    
+    A new deletion record for management plan group in testEnvironment
+    
+    A new jest test to test creation, creation amount, shape of management plans, date differences
+    
+    Helper functions in copyCropPlan "bareBones" could probably be reused by the other getManagementPlanGraph function at some point in the future.
+
+[33mcommit a4950d7708175fac1d87c3bc7eebdbe82471a372[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Wed Jul 26 09:53:13 2023 -0700
+
+    LF-3371 fix license
+
+[33mcommit 3e9bf44b7afcc169e39de19a661739f718d98b9f[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Tue Jul 25 13:47:33 2023 -0700
+
+    LF-3368 Add closing of menu by clicking elsewhere in view
+
+[33mcommit 568ae6e72fbcb08d63069536b916326a1c73ff88[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Tue Jul 25 13:01:20 2023 -0700
+
+    LF-3368 Add three dots vertical menu
+
+[33mcommit 1327919b0c04b27e1f12cb8ec070138bf760de6b[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Tue Jul 25 14:29:10 2023 -0400
+
+    LF-3363 - default booleans should be omitted
+
+[33mcommit eb77d2283ccd10c6bf5ce94aec74395de1996a29[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Tue Jul 25 10:47:58 2023 -0700
+
+    LF-3465 Clean up and rename reducer for clarity
+
+[33mcommit 67fd24de15d60d9cab54fd4efb8de12cd99ad475[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Tue Jul 25 10:38:16 2023 -0700
+
+    LF-3465 Handle transplant tasks
+
+[33mcommit cc36bc8167e81448c5a7e0d832e9253ad665dfce[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Tue Jul 25 08:02:21 2023 -0700
+
+    LF-3371 improve CropPlansModal stories
+
+[33mcommit 4d302f93c82877b5bbfedc5f99f8925ed90df6ea[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Tue Jul 25 07:56:57 2023 -0700
+
+    LF-3371 add initial value for infoRef in CropPlansModal
+
+[33mcommit fb3f7bc8c1a7814ebf9e77f9532ba1e6147079c6[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 17:20:10 2023 -0700
+
+    LF-3465 Handle unknown record redirect
+
+[33mcommit 044eb03dca2fcfa9246aca5bada99174dc82c932[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 17:18:31 2023 -0700
+
+    LF-3465 Add saga
+
+[33mcommit 11cdc67354b0a65144949bd8e4ab00bd7ae045d3[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 17:14:56 2023 -0700
+
+    LF-3465 Add crop plan deletion UI
+
+[33mcommit ec4151ae13208d35fd12119b527d6553c72c4960[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 16:58:54 2023 -0700
+
+    LF-3465 Add translations
+
+[33mcommit a6beb08cfbec859ab35b0910abafcd9a797a3986[m
+Merge: d6ffc5c25 c4a66bea3
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Mon Jul 24 19:48:50 2023 -0400
+
+    Merge branch 'integration' into LF-3363-repeat-crop-plan-repeat-crop-plan-endpoint
+
+[33mcommit 4349085742b94ccbe219cb59a9148eb443d343b8[m
+Author: Joyce Yuki <82857964+kathyavini@users.noreply.github.com>
+Date:   Mon Jul 24 16:47:48 2023 -0700
+
+    LF-3465 Add deletion controller
+
+[33mcommit d6ffc5c25c3aeef401c56dabe2541f2a3f1bed5b[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Mon Jul 24 19:30:10 2023 -0400
+
+    LF-3363 - match discussed frontend formatting
+
+[33mcommit 09234543e4693c1427496fcebb4e92f28f149d86[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 16:21:35 2023 -0700
+
+    LF-3371 add TODO
+
+[33mcommit 1d63d832f6d54a9cb38559aeb57cf4f9f8299291[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 16:18:02 2023 -0700
+
+    LF-3371 update translation key
+
+[33mcommit 8165704706a5b389e3664ff179178893832f4a0c[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 16:12:44 2023 -0700
+
+    LF-3371 create stories for CropPlansModal
+
+[33mcommit c05ce4df0bc07ee169e1edebb8a2c7ead44a8fd3[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 16:11:48 2023 -0700
+
+    LF-3371 update hasAllIterations and PropTypes in CropPlansModal
+
+[33mcommit 53f5a342ec457b48413aac22196ec691ec5cd521[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Mon Jul 24 19:05:58 2023 -0400
+
+    LF-3363 - cleanup, remove wage_at_moment
+    
+    Setting wage_at_moment may cause labour expense issues so it is set to  null with the expectation that task completion will store the correct data.
+
+[33mcommit 6a66a774cbe1ace1137bd99cfdc33372a7840ff1[m
+Author: Duncan-Brain <dbrain@litefarm.org>
+Date:   Mon Jul 24 18:43:50 2023 -0400
+
+    LF-3363 - reformats result data to match addManagementPlan
+
+[33mcommit feb1128e9306527ac9aafe38bf1f28e264313c56[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 15:31:01 2023 -0700
+
+    LF-3371 store management plan group info in Redux store
+
+[33mcommit 6c36eb7a3089020d39067ac86febc0c5682e6ec4[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Mon Jul 24 15:27:16 2023 -0700
+
+    LF-3371 format files
+
+[33mcommit 6a0c35da7bbef4287a053a6e66278ad46091d1a5[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Fri Jul 7 17:07:56 2023 -0700
+
+    LF-3371 create CropPlansModal
+
+[33mcommit 5eb762bf838b44b02d68862f3957fd1e2c8a2b2b[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 6 22:26:03 2023 -0700
+
+    LF-3371 create useElementHeight hook
+
+[33mcommit e60f3ca22a1a5fe7c2ec7d54735e335ab2661639[m
+Author: Sayaka Ono <sayaka.ono.81@gmail.com>
+Date:   Thu Jul 6 22:25:05 2023 -0700
+
+    LF-3371 add translations
+
+[33mcommit c4a66bea37abb2aa1d407112a2b239209a1baad4[m
+Merge: 68d60178b bfe99f7d7
+Au
