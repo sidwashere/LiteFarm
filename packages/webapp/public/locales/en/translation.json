@@ -440,6 +440,7 @@
     "CANCEL_MODAL": "document creation",
     "COMPLIANCE_DOCUMENTS_AND_CERTIFICATION": "Compliance documents and your certification",
     "DOCUMENTS": "Documents",
+    "VIEW_DETAIL": "View detail page to download multiple files",
     "EDIT_DOCUMENT": "Edit document",
     "FILTER": {
       "TITLE": "Documents Filter",
@@ -1069,6 +1070,8 @@
     "GERMINATION": "Germination",
     "HARVEST": "Initial harvest",
     "HARVEST_DATE": "When do you expect your next harvest?",
+    "HARVEST_TO_DATE": "Harvest to date",
+    "HARVEST_TO_DATE_INFO": "Harvest to date is calculated based on completed harvest tasks within this crop plan",
     "HISTORICAL_CONTAINER_OR_IN_GROUND": "Was it planted in a container or in the ground?",
     "IN_GROUND": "In ground",
     "INCOMPLETE_TASK_CONTENT": "This plan has tasks that aren’t completed yet. You’ll need to mark the tasks complete in order to complete this crop plan.",
@@ -1157,7 +1160,11 @@
     "WILD_CROP": "Are you harvesting a wild crop?",
     "ASSIGN_ALL_TASKS": "All tasks generated as part of this crop plan will be assigned to this individual. You can modify this assignment later",
     "CROP_PLAN_REPEAT": "This crop plan repeats",
-    "CROP_PLAN_REPEAT_SUBTEXT": "Clicking 'Save' will immediately save this crop plan. You'll then be prompted to describe how it repeats."
+    "CROP_PLAN_REPEAT_SUBTEXT": "Clicking 'Save' will immediately save this crop plan. You'll then be prompted to describe how it repeats.",
+    "REPEATED_MP_SPOTLIGHT": {
+      "BODY": "You can click here to see all crop plans in this group. Modifying an individual crop plan won’t change anything about others in the group.",
+      "TITLE": "Congrats! You’ve created your first repeating crop plan!"
+    }
   },
   "LOCATION_CREATION": {
     "TITLE": "No locations found!",
@@ -1607,7 +1614,7 @@
     "EXPIRED_INVITATION_LINK_ERROR": "Invalid or expired invitation",
     "GOOGLE_BUTTON": "CONTINUE WITH GOOGLE",
     "INVITED_ERROR": "A farm invitation has been emailed to you, please check your inbox and spam folder.",
-    "LITEFARM_UPDATED": "LiteFarm v3.3 is now available!",
+    "LITEFARM_UPDATED": "LiteFarm v3.4 is now available!",
     "PASSWORD_ERROR": "Password incorrect",
     "SIGN_IN": "Sign In",
     "SSO_ERROR": "Please login by clicking the Google button above",

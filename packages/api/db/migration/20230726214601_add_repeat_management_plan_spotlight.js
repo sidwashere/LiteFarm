@@ -1,5 +1,5 @@
 /*
- *  Copyright 2023 LiteFarm.org
+ *  Copyright (c) 2023 LiteFarm.org
  *  This file is part of LiteFarm.
  *
  *  LiteFarm is free software: you can redistribute it and/or modify
@@ -12,15 +12,17 @@
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *  GNU General Public License for more details, see <https://www.gnu.org/licenses/>.
  */
-import fr from './fr';
-import pt from './pt';
-import es from './es';
 
-const languageFiles = { fr, pt, es };
+export const up = async function (knex) {
+  await knex.schema.alterTable('showedSpotlight', (t) => {
+    t.boolean('repeat_management_plan_creation').defaultTo(false);
+    t.timestamp('repeat_management_plan_creation_end').nullable().defaultTo(null);
+  });
+};
 
-export const getRruleLanguage = (language) => {
-  if (!Object.keys(languageFiles).includes(language)) {
-    return { getText: (id) => id, language: null };
-  }
-  return languageFiles[language];
+export const down = async function (knex) {
+  await knex.schema.alterTable('showedSpotlight', (t) => {
+    t.dropColumn('repeat_management_plan_creation');
+    t.dropColumn('repeat_management_plan_creation_end');
+  });
 };
